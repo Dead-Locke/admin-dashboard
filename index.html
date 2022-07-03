@@ -6,26 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div id="sidebar">
-        <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Profile</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Messages</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">History</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Tasks</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Communities</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Settings</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Support</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Privacy</a>
+        <p> <span class="material-icons">
+            dashboard
+            </span>
+            Dashboard</p>
+        <ul class="main-links">
+            <li>
+                <span class="material-icons">home</span>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Home</a></li>
+            <li>
+                <span class="material-icons">account_circle</span>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Profile</a></li>
+            <li>
+                <span class="material-icons">mail</span>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Messages</a></li>
+            <li>
+                <span class="material-icons">history</span>
+                <a href="http://" target="_blank" rel="noopener noreferrer">History</a></li>
+            <li>
+                <span class="material-icons">task</span>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Tasks</a></li>
+            <li>
+                <span class="material-icons">groups</span>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Communities</a></li>
+        </ul>
+
+        <ul class="side-links">
+            <li><span class="material-icons">
+                settings
+                </span><a href="http://" target="_blank" rel="noopener noreferrer">Settings</a>
+            </li>
+            <li>
+                <span class="material-icons">help</span>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Support</a>
+            </li>
+            <li>
+                <span class="material-icons">verified_user</span>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Privacy</a>
+            </li>
+        </ul>
     </div>
 
     <header>
         <form>
-            <button>
-                SEARCH
+            <button type="submit" class="search">
+                <span class="material-icons">search</span>
             </button>
-            <input type="text" id="searchbar" placeholder="Search..." autocomplete="off" list="search-options">
+            <input type="search" id="searchbar" placeholder=" Search..." autocomplete="off" list="search-options">
             <datalist class="search-options">
                 <option value="Rock-Paper-Scissors"></option>   
                 <option value="Calculator"></option>
@@ -35,14 +67,15 @@
             </datalist>
         </form>
         <div id="profile">
-            <img src="" alt="notif">
-            <a href="https://github.com/Dead-Locke"><img src="" alt="github-icon"></a>   
-            <p class="name">Dead-Locke</p>
+            <a href="" class="notifications"><span class="material-icons">notifications_active</span></a>
+            <a href="https://github.com/Dead-Locke"><img src="images/GitHub-Mark/GitHub-Mark.png" alt="github-icon" class="github-icon"> <p class="name">Dead-Locke</p></a>   
+            
         </div>
 
         <div id="welcome">
             <div id="odin">
-                <a href="">The Odin Project</a> 
+                
+                <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard"><img src="images/Odin Logos/odin-lined-dark.png" alt="odin project logo">The Odin Project</a> 
             </div>
             <div id="controls">
                 <button>New</button>
@@ -56,40 +89,45 @@
         <div id="projects">
             <h3>My projects</h3>
             <div>
-                <article>
+                <article class="calculator">
                     <h4><a href="https://dead-locke.github.io/calculator/">Calculator</a></h4>
-                    <img src="" alt="calc-thumbnail">
-                    <p>Calculator Project Description</p>
+                    <p>This project is a fully functioning calculator. It can not evaluate more than a single pair of numbers at a time. Additionally, the eval() function is not used.</p>
                     <div class="project-links">
-                        <a href="https://dead-locke.github.io/calculator/"><img src="" alt="eyecon"></a>
-                        <a href="https://github.com/Dead-Locke/calculator"><img src="" alt="github-link"></a>
+                        <span class="material-icons">visibility</span>
+                        <div>
+                            <a href="https://dead-locke.github.io/calculator/"><span class="material-icons">link</span></a>
+                            <a href="https://github.com/Dead-Locke/calculator"><img src="images/GitHub-Mark/GitHub-Mark.png" alt="github-link"></a>
+                        </div>
                     </div>
                 </article>
-                <article>
+                <article class="etch-a-sketch">
                     <h4><a href="https://dead-locke.github.io/etch-a-sketch/">Etch-a-sketch</a></h4>
                     <img src="" alt="Etch-a-sketch-thumbnail">
                     <p>Etch-a-sketch Project Description</p>
                     <div class="project-links">
-                        <a href="https://dead-locke.github.io/etch-a-sketch/"><img src="" alt="eyecon"></a>
-                        <a href="https://github.com/Dead-Locke/etch-a-sketch"><img src="" alt="github-link"></a>
+                        <span class="material-icons">visibility</span>
+                        <div>
+                            <a href="https://dead-locke.github.io/etch-a-sketch/"><span class="material-icons">link</span></a>
+                            <a href="https://github.com/Dead-Locke/etch-a-sketch"><img src="images/GitHub-Mark/GitHub-Mark.png" alt="github-link"></a>
+                        </div>
                     </div>
                 </article>
-                <article>
+                <article class="rps">
                     <h4><a href="https://dead-locke.github.io/rock-paper-scissors-project/">Rock-Paper-Scissors</a></h4>
                     <img src="" alt="Rock-Paper-Scissors-thumbnail">
                     <p>Rock-Paper-Scissors Project Description</p>
                     <div class="project-links">
-                        <a href="https://dead-locke.github.io/rock-paper-scissors-project/"><img src="" alt="eyecon"></a>
-                        <a href="https://github.com/Dead-Locke/rock-paper-scissors-project"><img src="" alt="github-link"></a>
+                        <a href="https://dead-locke.github.io/rock-paper-scissors-project/"><span class="material-icons">link</span></a>
+                        <a href="https://github.com/Dead-Locke/rock-paper-scissors-project"><img src="images/GitHub-Mark/GitHub-Mark.png" alt="github-link"></a>
                     </div>
                 </article>
-                <article>
+                <article class="sign-up-form">
                     <h4><a href="">Sign-Up-Form</a></h4>
                     <img src="" alt="Sign-Up-Form-thumbnail">
                     <p>Sign-Up-Form Project Description</p>
                     <div class="project-links">
-                        <a href=""><img src="" alt="eyecon"></a>
-                        <a href=""><img src="" alt="github-link"></a>
+                        <a href=""><span class="material-icons">link</span></a>
+                        <a href=""><img src="images/GitHub-Mark/GitHub-Mark.png" alt="github-link"></a>
                     </div>
                 </article>
                 <article>
@@ -97,8 +135,8 @@
                     <img src="" alt="Project#5-thumbnail">
                     <p>Project#5 Project Description</p>
                     <div class="project-links">
-                        <a href=""><img src="" alt="eyecon"></a>
-                        <a href=""><img src="" alt="github-link"></a>
+                        <a href=""><span class="material-icons">link</span></a>
+                        <a href=""><img src="images/GitHub-Mark/GitHub-Mark.png" alt="github-link"></a>
                     </div>
                 </article>
                 <article>
@@ -106,14 +144,14 @@
                     <img src="" alt="Project#6-thumbnail">
                     <p>Project#6 Project Description</p>
                     <div class="project-links">
-                        <a href=""><img src="" alt="eyecon"></a>
-                        <a href=""><img src="" alt="github-link"></a>
+                        <a href=""><span class="material-icons">link</span></a>
+                        <a href=""><img src="images/GitHub-Mark/GitHub-Mark.png" alt="github-link"></a>
                     </div>
                 </article>
             </div>
         </div>
 
-        <div id="annoucements">
+        <div id="announcements">
             <h3>Announcements</h3>
             <div>
                 <div>
