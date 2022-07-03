@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+body {
+    display: grid;
+    grid-template-rows: auto 4fr;
+    grid-template-columns:1fr 4fr;
+    min-height: 100vh;
+}
+
+button:hover {
+    color:blue;
+    background-color: red;
+    transform: scale(1.05);
+}
+
+a img:hover,a span:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* ----------------------------------------- */
+
+#sidebar {
+    font-weight: bold;
+    display: grid;
+    grid-row: span 2;
+    grid-template-rows: auto auto 1fr;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #1992d4;
+    color: white;
+    
+}
+
+#sidebar > p {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;  
+}
+
+#sidebar > p > span{
+    font-size: 3rem;
+}
+
+#sidebar > ul{
+    justify-content: start;  
+    padding: 1rem; 
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+#sidebar > ul > li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;  
+}
+
+.main-links, .side-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    list-style: none;
+}
+ 
+#sidebar a {
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+}
+
+#sidebar a:hover {
+    color:gainsboro;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+
+/* --------------------------------------------- */
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+button.search{
+    border: none;
+    background-color: transparent;
+}
+
+
+form {
+    display: flex;
+    padding: 1.3rem;
+}
+
+#searchbar {
+    width: 100%;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    padding: 0 1rem;
+    background-color: #e2e8f0;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2rem;
+    gap: 2rem;
+}
+#profile > a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+.github-icon {
+    width: 35px;
+}
+
+
+#welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 1/3;
+    padding: 0 2rem 1rem 2rem;
+    border-bottom: 1px solid white;
+    box-shadow: 0 5px 5px -1px gray;
+    position: relative;
+}
+
+#welcome button {
+    background-color: #1992d4;
+    border: none;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#welcome #controls {
+    display: flex;
+    gap: 1rem;
+}
+
+
+#odin > a >img {
+    height: 60px;
+}
+
+#odin > a {
+    display: flex;
+    color: black;
+    font-family: "Norse";
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    align-items: center;
+    gap: 1rem;
+}
+/* ---------------------------------------------- */
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 1rem;
+    background-color: #e2e8f0;
+}
+
+#projects {
+    grid-row: span 2;
+}
+
+#projects > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem; 
+    
+}
+
+#projects > div > article {
+    width: auto;
+    height: 150px;
+    background-color: white;
+    padding: 2rem;
+    border-left: 5px solid orange;
+    border-radius: 8px;
+    
+}
+
+.project-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-links > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.project-links a {
+    color: black;
+}
+
+.project-links img {
+    width: 1.5rem;   
+}
+
+article {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    gap: 10px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+
+
+.calculator {
+    /* background-image: url("/images/Project Thumbnails/calculator.png"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#announcements {
+    padding-left: 1rem;
+}
+
+#announcements > div {
+    display: grid;
+    gap: 20px;
+}
+
+#trending {
+    padding: 20px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'Norse'; /*a name to be used later*/
+    src: url('fonts/Norse-Bold.otf'); /*URL to font*/
+}
