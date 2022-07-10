@@ -210,6 +210,7 @@ form {
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 1rem;
     padding: 1rem;
     background-color: white;
 }
@@ -225,12 +226,12 @@ main h3 {
 #projects > div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem; 
+    gap: 2rem; 
 }
 
 #projects > div > article {
     width: auto;
-    height: 200px;
+    height: 220px;
     background-color: var(--white);
     padding: 1rem;
     border-left: 5px solid var(--tertiary);
@@ -299,16 +300,16 @@ article a {
     right: 0;
     overflow: hidden;
     background-color: white;
-    width: auto;
     height: 100%;
     transform: scale(0);
     transition: .15s ease;
-  }
+}
 
-  .overlay img {
+
+.overlay img {
     width: 100%;
-    height: 100%;
-  }
+    height: auto;
+}
 
 article:hover .overlay{
     transform: scale(1);
@@ -317,15 +318,7 @@ article:hover .overlay{
 
 
 
-.calculator {
-    /* background-image: url("/images/Project Thumbnails/calculator.png"); */
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
 
-#announcements {
-    padding-left: 1rem; 
-}
 
 #announcements > div {
     display: grid;
@@ -345,9 +338,6 @@ article:hover .overlay{
   -webkit-box-orient: vertical;  
 }
 
-#goals {
-    padding-left: 1rem;
-}
 
 #goals > div {
     background-color: var(--white);
