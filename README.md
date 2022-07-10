@@ -1,7 +1,9 @@
 # Admin-Dashboard
+## Fifth major project from the [Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard) carriculum.
+___
 
 ![thumbnail](images/Project%20Thumbnails/admin-dashboard.png)
-### A full dashboard design project from the [Odin Project]() carriculum. It combines most of what I've learned about HTML and CCS design over the course of the previous projects but leans more on grid for its layout work. The main content highlights my previous projects with links to the preview and github pages. 
+### A full dashboard design project from the [Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard) carriculum. It combines most of what I've learned about HTML and CCS design over the course of the previous projects but leans more on grid for its layout work. The main content highlights my previous projects with links to the preview and github pages. 
 ---
 ## [Live Preview](https://dead-locke.github.io/admin-dashboard/)
 
